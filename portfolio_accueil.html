@@ -9,59 +9,92 @@
 <body>
     <header>
         <section>
-            <div class="container flex">
-                <!-- <h1 class="col-10">Mon Portfolio</h1> -->
-                <img src="img/logo_fox_detouring.png" alt="Logo">
-                <p><span id="berte">/</span> Berte <span>Adrien</span></p>
-                <div class="hamburger col-2">
-                    <a href="#menu">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </a>
+            <div class="big_container">
+                <div class="container flex">
+                    <!-- <h1 class="col-10">Mon Portfolio</h1> -->
+                    <img src="img/logo_fox_detouring.png" alt="Logo">
+                    <p><span id="berte">/</span> Berte <span>Adrien</span></p>
+                    <div class="hamburger col-2">
+                        <a href="#menu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="container2">
+                    <nav id="menu" class="menu">
+                        <ul class="submenu">
+                            <li id="fermer"><a href="#">&#x2716;</a></li>
+                            <li id="comp"><a href="#">Skills</a> 
+                                <ul id="competences" class="competences">
+                                    <li class="details"><a href="#">HTML 5 & CSS</a></li>
+                                    <li class="details"><a href="#">JavaScript</a></li>
+                                    <li class="details"><a href="#">PhpMysql</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Projets</a></li>
+                            <li><a href="#">A propos</a></li>
+                            <li><a href="#">Contact</a></li>         
+                        </ul>
+                    </nav>
                 </div>
             </div>
-            <nav id="menu" class="menu">
-                <ul class="submenu row">
-                    <li id="fermer"><a href="#">&#x2716;</a></li>
-                    <li><a href="#competences">Compétences :</a> 
-                        <ul id="competences" class="competences row">
-                            <li class="details"><a href="#">HTML 5 & CSS</a></li>
-                            <li class="details"><a href="#">JavaScript</a></li>
-                            <li class="details"><a href="#">PhpMysql</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Mes projets</a></li>
-                    <li><a href="#">A propos</a></li>
-                    <li><a href="#">Contact</a></li>         
-                </ul>
-            </nav>
+
             <div class="slide row">
                 <div id="text">
                     <p>JE SUIS</p>
-                    <h1>WEBDESIGNER</h1>
-                    <p>GRAPHISTE & DÉVELOPPEUR FREELANCE</p>
+                    <h1>DÉVELOPPEUR WEB/MOBILE</h1>
+                    <p>UX / UI</p>
                 </div>
             </div>
         </section>
         
     </header>
-        <div class="bloc">
 
+        <div class="bloc">
             <div class="contenu row">
                 <img id="profil" src="img/photo_profil.png" alt="profil Berte Adrien">
                 <h1>Je suis développeur freelance.<h1>
                 <hr width="25%">
             </div>
-            <div>
+            <div class="bloc2">
                 <div class="contenu2">
                     <h2>Présentation<h2>
                     <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
                 </div>
-                <div>
-                    
+                <div class="bloc_progress row">
+
+                    <p>HTML / CSS / JS</p>
+                    <div id="progress1"></div>
+
+                    <p>PHP / MySQL</p>
+                    <div id="progress2"></div>
+
+                    <p>CMS / WORDPRESS</p>
+                    <div id="progress3"></div>
+
+                    <p>PHOTOSHOP / ILLUSTRATOR</p>
+                    <div id="progress4"></div>
+                      
                 </div>
             </div>
+        </div>
+        <div id="icons">
+            <ul>
+                <li><img src="img/icon1.png" alt=""></li>
+                <li>Compréhension, imagination, création</li>
+            </ul>
+            <ul>
+                <li><img src="img/icon1.png" alt=""></li>
+                <li>Graphiqme, identité, ergonomie, photographie</li>
+            </ul>
+            <ul>
+                <li><img src="img/icon1.png" alt=""></li>
+                <li>Gestion de projets, développement, publivcation</li>
+            </ul>
+            
+
         </div>
 </body>
 </html>

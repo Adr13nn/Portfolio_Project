@@ -26,11 +26,12 @@ header {
     width: 100%;
     height: 100vh;
     background-image: url(img/header_fonddesert.jpg);
+    background-repeat: no-repeat;
 }
 
 section {
     width: 100%;
-    height: 100vh;
+    height: 80vh;
 }
 
 
@@ -50,7 +51,7 @@ section {
 .col-12 { width: 100%; }
 
 .container {
-    border: 3px solid red;
+    /* border: 3px solid red; */
     position: sticky;
     
 }
@@ -100,7 +101,7 @@ section {
 }
 
 .hamburger {
-    position: absolute;
+    position: fixed;
     right: 0;
     top: 50px;
     width: 32px;
@@ -135,11 +136,12 @@ section {
 }
 
 .menu ul #fermer {
-    border: 2px outset red;
-    box-shadow: 10px 5px 5px red;
+    border: 2px outset orangered;
+    box-shadow: 10px 5px 5px orangered;
     display: block;
     align-self: flex-end;
     width: 60px;
+    background-color: orangered;
     
 }
 
@@ -222,7 +224,7 @@ section {
 .slide {
     justify-content: center;
     align-items: center;
-    height: 83%;
+    height: 100%;
     width: 100%; 
     color: white;
     
@@ -235,14 +237,15 @@ section {
     border-radius: 20px;
     font-size: 1em;
     text-align: center;
+    margin: auto 1em;
     
 }
 
 /* contenu home page - après header - */
 
 .bloc {
-    width: 75%;
-    margin: auto;
+    width: 100%;
+    
 }
 
 .contenu #profil {
@@ -273,10 +276,261 @@ section {
     margin-bottom: 1em;
 }
 
-.contenu2 p {
+.bloc2 .contenu2 p {
     font-size: 0.75em;
     text-align: left;
+    margin left: auto;
+    padding-left: 1em;
+    padding-right: 1em;
+    
 }
+
+/*  DEBUT : Barre de progresseion */
+
+#progress1 {
+    background: cornflowerblue;
+    border-radius: 13px;
+    height: 20px;
+    width: 300px;
+    padding: 3px;
+    
+      
+}
+
+#progress1:after {
+    content: '';
+    display: block;
+    background: orange;
+    width: 90%;
+    height: 100%;
+    border-radius: 9px;
+   
+}
+
+#progress2 {
+    background: cornflowerblue;
+    border-radius: 13px;
+    height: 20px;
+    width: 300px;
+    padding: 3px;   
+}
+
+#progress2:after {
+    content: '';
+    display: block;
+    background: orange;
+    width: 80%;
+    height: 100%;
+    border-radius: 9px;   
+}
+
+#progress3 {
+    background: cornflowerblue;
+    border-radius: 13px;
+    height: 20px;
+    width: 300px;
+    padding: 3px;   
+}
+
+#progress3:after {
+    content: '';
+    display: block;
+    background: orange;
+    width: 88%;
+    height: 100%;
+    border-radius: 9px;   
+}
+
+#progress4 {
+    background: cornflowerblue;
+    border-radius: 13px;
+    height: 20px;
+    width: 300px;
+    padding: 3px;   
+}
+
+#progress4:after {
+    content: '';
+    display: block;
+    background: orange;
+    width: 75%;
+    height: 100%;
+    border-radius: 9px;   
+}
+/* FIN : barre de progression */
+
+.bloc2 {
+    /* border: 3px solid blue; */
+  
+}
+
+.contenu2 {
+    /* border: 2px solid red; */
+    width: 100%;
+     
+}
+
+
+.bloc_progress {
+    /* border: 2px solid red; */
+    height: 100%;
+    width: 100%;
+    /* margin: auto; */
+    align-items: center;
+}
+
+.bloc_progress p {
+    color: grey;
+    /* padding-left: 20px; */
+    margin: 1em 0;
+}
+
+/* icons : homepage */
+
+#icons {
+    /* border: 2px solid red; */
+    margin-top: 1em;
+    padding: 1em;
+    width: 90%;
+    margin: auto;
+}
+
+#icons ul {
+    list-style-type: none;
+    padding: 0;
+    /* border: 2px solid white; */
+}
+
+#icons ul li {
+    text-align: center;
+    padding: 0.5em;
+}
+
+
+
+
+@media screen and (min-width: 1024px) {
+    .hamburger {
+        display: none
+    }
+
+    #menu {
+        display: block;
+        position: absolute;
+        width: 70%;
+          
+    }
+
+    .big_container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        position: fixed;
+    }
+    .container {
+        width: 30%;
+        height: 100%;
+        align-self: start;
+    }
+
+    .container2 {
+        width: 70%;
+        height: 100%;
+        align-self: center;
+        margin-top: -25px;
+     
+    }
+
+    .menu .submenu {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        height: 10%;
+        background-color: transparent;
+        border: none;
+        box-shadow: none;
+    }
+
+    .menu .submenu li {
+        width: 25%;
+    }
+
+    .menu .submenu li:first-child a {
+        display: none;
+        
+    }
+
+    .menu ul #fermer {
+        display: none;
+    }
+    
+
+    .menu ul li .competences {
+        display: none;
+    
+    }
+
+    .menu ul li:hover .competences {
+        display: block;
+        display: flex;
+        flex-direction: column;
+           
+    }
+
+    .bloc2 {
+        display: flex;
+        height: 100%;
+        width: 80%;
+        margin: auto;
+         
+    }
+
+    .contenu2 {
+        width: 50%;
+        font-size: 1vw;
+    }
+
+    .contenu2 p {
+        font-size: 1em;
+        font-size: 1vw;
+    }
+
+    .bloc_progress {
+        font-size: 1vw;
+        width: 50%;
+        align-self: center;
+    }
+
+    #icons {
+        display: flex;
+        justify-content: space-evenly;
+        /* border: 2px solid blue; */
+        margin-top: 1em;
+        padding: 1em;
+        width: 90%;
+        margin: auto;
+    }
+    
+    #icons ul {
+        list-style-type: none;
+        padding: 0;
+        border: 2px solid white;
+    }
+    
+    #icons ul li {
+        text-align: center;
+        padding: 0.5em;
+    }
+
+
+
+}
+
+    
+  
+
+    
 
 
 
