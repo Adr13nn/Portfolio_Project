@@ -279,9 +279,7 @@ section {
 .bloc2 .contenu2 p {
     font-size: 0.75em;
     text-align: left;
-    margin left: auto;
     padding-left: 1em;
-    padding-right: 1em;
     
 }
 
@@ -359,14 +357,15 @@ section {
 }
 /* FIN : barre de progression */
 
-.bloc2 {
-    /* border: 3px solid blue; */
+/* .bloc2 {
+    border: 3px solid blue;
   
-}
+} */
 
 .contenu2 {
     /* border: 2px solid red; */
-    width: 100%;
+    width: 80%;
+    margin: auto;
      
 }
 
@@ -389,10 +388,11 @@ section {
 
 #icons {
     /* border: 2px solid red; */
-    margin-top: 1em;
+    margin-top: 2em;
     padding: 1em;
     width: 90%;
     margin: auto;
+    
 }
 
 #icons ul {
@@ -404,6 +404,7 @@ section {
 #icons ul li {
     text-align: center;
     padding: 0.5em;
+    color: grey;
 }
 
 
@@ -481,8 +482,10 @@ section {
     .bloc2 {
         display: flex;
         height: 100%;
-        width: 80%;
+        width: 90%;
         margin: auto;
+        padding: 0;
+        /* margin-top: 2em; */
          
     }
 
